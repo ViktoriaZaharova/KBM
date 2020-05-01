@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Autoins.org - проверка и восстановление КБМ</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<!--header-->
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon"><img src="img/rsa-logo.png" alt=""></span>
+                        <span class="logo-text">Autoins.org - проверка и восстановление КБМ</span>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 d-none d-sm-flex justify-content-end">
+                    <div class="schedule header-box">
+                        <span class="far fa-clock icon"></span>
+                        <p>Сервис работает 24/7</p>
+                    </div>
+
+                    <a href="mailto:info@autoins.org" class="mail header-box">
+                        <span class="far fa-envelope icon"></span>
+                        <span>info@autoins.org</span>
+                    </a>
+
+                    <a href="tel:+78002003512" class="phone header-box">
+                        <span class="fas fa-phone icon"></span>
+                        <span>8(800) 200 35 12</span>
+                    </a>
+                </div>
+
+                <div class="d-flex d-sm-none">
+                    <div class="btn-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#" class="menu-links active">Проверить КБМ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Восстановить КБМ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Таблица КБМ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Проверить статус заявки</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!--header-->
+
+<div class="content-section content-section-news">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <!--        breadcrumbs-->
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><span>Статьи</span></li>
+                </ul>
+                <!--        breadcrumbs-->
+            </div>
+
+            <div class="col-12">
+                <h1>Новости РСА</h1>
+            </div>
+
+            <div class="col-12 col-md-8 news-content">
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new1.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Поиск покупателя</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 37312</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Обзор сайтов по продаже б/у
+                            автомобилей: плюсы и минусы
+                            для продавцов</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new2.jpeg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Советы по продаже</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 8032</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Как стать перекупом</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new3.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Оформление сделки</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 37312</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Правила продажи
+                            автомобиля 2020</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new4.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Что делать после продажи</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 8032</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Госпошлина за снятие с учета
+                            автомобиля в 2020 году</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new5.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Оформление сделки</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 37312</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Как продать машину
+                            по доверенности</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new6.jpeg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Что делать после продажи</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 8032</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Что делать после продажи
+                            автомобиля</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new7.jpeg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Поиск покупателя</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 37312</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Как распознать фейк-объявление,
+                            и зачем их создают</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new8.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Какую цену установить</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 8032</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Что влияет на стоимость автомобиля</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new9.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Советы по продаже</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 37312</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Продажа онлайн: как продать авто
+                            через интернет</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new10.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Общение с покупателем</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 8032</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Торг: как устоять и не скинуть цену</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new11.jpeg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Что делать после продажи</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 37312</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Как вернуть деньги за ОСАГО
+                            при продаже автомобиля</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new12.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Что делать после продажи</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 8032</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Как снять авто с учета после продажи</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new1.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Поиск покупателя</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 37312</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Обзор сайтов по продаже б/у
+                            автомобилей: плюсы и минусы
+                            для продавцов</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new2.jpeg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Советы по продаже</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 8032</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Как стать перекупом</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new3.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Оформление сделки</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 37312</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Правила продажи
+                            автомобиля 2020</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new4.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Что делать после продажи</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 8032</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Госпошлина за снятие с учета
+                            автомобиля в 2020 году</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new5.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Оформление сделки</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 37312</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Как продать машину
+                            по доверенности</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new6.jpeg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Что делать после продажи</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 8032</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Что делать после продажи
+                            автомобиля</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new7.jpeg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Поиск покупателя</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 37312</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Как распознать фейк-объявление,
+                            и зачем их создают</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new8.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Какую цену установить</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 8032</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Что влияет на стоимость автомобиля</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new9.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Советы по продаже</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 37312</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Продажа онлайн: как продать авто
+                            через интернет</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new10.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Общение с покупателем</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 8032</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Торг: как устоять и не скинуть цену</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new11.jpeg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Что делать после продажи</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 37312</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Как вернуть деньги за ОСАГО
+                            при продаже автомобиля</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+                <div class="news-box">
+                    <a href="#" class="news-box__img"><img src="img/new12.jpg" alt=""></a>
+                    <div class="news-box__content">
+                        <div class="news-box__cat">
+                            <h6>Что делать после продажи</h6>
+                            <div class="view"><span class="icon fas fa-eye"></span> 8032</div>
+                        </div>
+
+                        <a href="#" class="news-box__title">Как снять авто с учета после продажи</a>
+
+                        <div class="news-box__date">24.04.2020</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-4 sidebar-wrapper">
+
+                <div class="sidebar">
+                    <div class="sale-box">
+                        <h6>Узнайте скидку на ОСАГО</h6>
+                        <p>Каждому гражданину положена скидка
+                            на ОСАГО до 50 %, проверьте бесплатно
+                            вашу скидку за 5 минут, в режиме онлайн</p>
+
+                        <a href="index.html" class="btn btn-border">Узнать скидку</a>
+                    </div>
+
+                    <div class="popular-news">
+                        <h4>Популярное из других разделов</h4>
+                        <div class="popular-news__box">
+                            <a href="#" class="popular-news__img"><img src="img/new13.jpg" alt=""></a>
+                            <div class="popular-news__content">
+                                <h3 class="popular-news__title">Как заполнить заявление
+                                    на регистрацию автомобиля
+                                    в ГИБДД: образец</h3>
+                                <a href="#" class="links">Читать</a>
+                            </div>
+                        </div>
+                        <div class="popular-news__box">
+                            <a href="#" class="popular-news__img"><img src="img/new14.jpg" alt=""></a>
+                            <div class="popular-news__content">
+                                <h3 class="popular-news__title">Как заполнить договор
+                                    купли-продажи автомобиля
+                                    2020: скачать бланк</h3>
+                                <a href="#" class="links">Читать</a>
+                            </div>
+                        </div>
+                        <div class="popular-news__box">
+                            <a href="#" class="popular-news__img"><img src="img/new15.jpg" alt=""></a>
+                            <div class="popular-news__content">
+                                <h3 class="popular-news__title">Авто для новичка: какую
+                                    купить первую машину</h3>
+                                <a href="#" class="links">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-accent click-top">Наверх <span class="icon fas fa-chevron-up"></span></a>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <a href="#" class="btn btn-accent all-news">
+                    Показать ещё статьи <span class="icon fas fa-chevron-down"></span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<footer>
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon"><img src="img/rsa-logo.png" alt=""></span>
+                        <span class="logo-text">Autoins.org - проверка и восстановление КБМ</span>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-7 ">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Проверить КБМ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Восстановить КБМ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Таблица КБМ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Проверить статус заявки</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="info-document">
+                        <p>Безопасность операций подтверждена сертификатом соответствия международному стандарту PCI
+                            DSS. Услуги по переводу денежных средств оказывает Обществом с ограниченной ответственностью
+                            «Бизнес Элемент») (ИНН 5047063929, ОГРН 1055009302215, местонахождение (адрес): 129344, г.
+                            Москва, ул. Искры, д. 31, к.1, ком. 15А пом. III</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 offset-lg-2">
+
+                    <div class="footer-box">
+                        <p>Платежи защищены:</p>
+                        <ul class="list-protection">
+                            <li><img src="img/https.png" alt=""></li>
+                            <li><img src="img/3ds.png" alt=""></li>
+                            <li><img src="img/visa.png" alt=""></li>
+                        </ul>
+                    </div>
+
+                    <div class="box-social footer-box">
+                        <p>Отзывы о нас:</p>
+                        <ul class="list-social">
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex">
+                    <a href="#" class="menu-footer__links">
+                        <i class="fas fa-sitemap"></i>
+                        Карта сайта
+                    </a>
+                    <ul class="menu-footer">
+                        <li class="menu-footer__item"><a href="#" class="menu-footer__links">Политика обработки
+                            данных</a></li>
+                        <li class="menu-footer__item"><a href="#" class="menu-footer__links">Пользовательское
+                            соглашение</a></li>
+                    </ul>
+                    <a href="#" class="menu-footer__links">
+                        Новости и статьи
+                    </a>
+                    <div class="copyright">© 2020 г. Все права защищены</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
