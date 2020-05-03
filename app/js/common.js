@@ -1,22 +1,11 @@
 // visible news
 $('.all-news').on('click', function (e) {
     e.preventDefault();
+    $('.news-box:hidden').slice(0, 12).css('display', 'flex');
 
-    var
-        $this = $(this),
-        content = $('.news-content').find('.news-box');
-
-
-    if (!$this.hasClass('trigger')) {
-        $this.addClass('trigger');
-        $this.html('Скрыть статьи <span class="icon fas fa-chevron-up"></span>');
-
-        content.css('display', 'flex');
-    } else {
-        $this.removeClass('trigger');
-        $this.html('Показать ещё статьи <span class="icon fas fa-chevron-down"></span>');
-
-        content.slice(12).css('display', 'none');
+    var onBlock = $('.news-box:hidden').length;
+    if(onBlock <= 0) {
+        $('.all-news').hide();
     }
 });
 // visible news
@@ -45,5 +34,15 @@ $(function () {
         }
     });
 });
+
+
+// lazy load
+$(document).ready(function () {
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
+});
+// lazy load
+
+// validation
 
 

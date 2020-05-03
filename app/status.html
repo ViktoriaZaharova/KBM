@@ -85,7 +85,7 @@
                                 <a href="#" class="menu-links">Таблица КБМ</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="menu-links">Проверить статус заявки</a>
+                                <a href="#" class="menu-links active">Проверить статус заявки</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#" class="menu-links">Контакты</a>
@@ -99,7 +99,7 @@
 </header>
 <!--header-->
 
-<div class="content-section">
+<div class="content-section content-section-status">
     <div class="container">
 
         <div class="row">
@@ -107,108 +107,81 @@
                 <!--        breadcrumbs-->
                 <ul class="breadcrumbs">
                     <li><a href="index.html">Главная</a></li>
-                    <li><span>Контакты</span></li>
+                    <li><span>Проверить статус заявки</span></li>
                 </ul>
                 <!--        breadcrumbs-->
             </div>
 
             <div class="col-12">
-                <h1>Контакты сервиса и РСА</h1>
+                <h1>Проверить статус заявки</h1>
             </div>
 
             <div class="col-12 col-md-6">
-                <div class="contacts-box contacts-box__one">
-                    <div class="contacts-box__logo"><img src="img/rsa-logo2.png" alt=""></div>
-                    <div class="contacts-box__content">
-                        <h3>Клиентам</h3>
-                        <p>Все вопросы, связанные <br>
-                            с заявками, поданными <br>
-                            на восстановление</p>
-                    </div>
-                </div>
+                <div class="status-info">
+                    <p>Для того, чтобы узнать, на какой стадии находится ваша заявка, укажите номер заказа и адрес
+                        эоектронной почты</p>
 
-                <div class="contacts-box">
-                    <span class="icon far fa-clock"></span>
-                    <div class="contacts-box__content">
-                        <h3>Режим работы</h3>
-                        <p>Пн - Пт, с 10:00-16:00</p>
-                        <p>по московскому времени</p>
-                    </div>
-                </div>
+                    <form method="post" class="form">
+                        <div class="form-group">
+                            <label>
+                                <span class="form-title">Номер заказа: *</span>
+                                <input type="text" placeholder="123456789" name="number">
+                            </label>
+                        </div>
 
-                <div class="contacts-box">
-                    <span class="icon fas fa-phone"></span>
-                    <div class="contacts-box__content">
-                        <h3>Номер телефона</h3>
-                        <a href="tel:+78002002275" class="phone">8(800) 200 22 75</a>
-                    </div>
-                </div>
+                        <div class="form-group">
+                            <label>
+                                <span class="form-title for-email">Адрес эл. почты: *</span>
+                                <input type="text" placeholder="example@mail.ru" name="mail" required>
+                            </label>
+                        </div>
 
-                <div class="contacts-box">
-                    <span class="icon far fa-envelope"></span>
-                    <div class="contacts-box__content">
-                        <h3>Электронная почта</h3>
-                        <a href="mailto:info@autoins.ru" class="mail">info@autoins.ru</a>
-                    </div>
-                </div>
+                        <div class="form-group">
+                            <div class="description-form">Максимальный срок обработки 7 рабочих дней. Если заявка не
+                                будет выполнена, возврат
+                                денежных средств будет произведен автоматически
+                            </div>
+                        </div>
 
-                <div class="contacts-box">
-                    <span class="icon fas fa-map-marker-alt"></span>
-                    <div class="contacts-box__content">
-                        <h3>Адрес</h3>
-                        <p>Москва, ул. Переверткина 49, оф 234</p>
-                    </div>
+                        <button type="submit" class="btn btn-accent">Проверить заявку</button>
+                    </form>
                 </div>
             </div>
 
             <div class="col-12 col-md-6">
-                <div class="contacts-box contacts-box__one">
-                    <div class="contacts-box__logo"><img src="img/rsa.png" alt=""></div>
-                    <div class="contacts-box__content">
-                        <h3>РСА</h3>
-                        <p>Общие вопросы, связанные <br>
-                            с КБМ и работой РСА</p>
+                <div class="status-result">
+                    <div class="status-result-line">
+                        <div class="status-result-line__bg"></div>
                     </div>
-                </div>
 
-                <div class="contacts-box">
-                    <span class="icon far fa-clock"></span>
-                    <div class="contacts-box__content">
-                        <h3>Режим работы</h3>
-                        <p>Пн - Пт, с 10:00-16:00
-                        </p>
-                        <p>по московскому времени</p>
+                    <div class="status-result__stages">
+                        <div class="status-result__stage">
+                            <div class="status-result__stage-icon"><img src="img/money.svg" alt=""></div>
+                            <div class="status-result__stage-content">
+                                <p>Оплачена</p>
+                                <div class="date-wrap">
+                                    <div class="date">02.03.2020</div>
+                                    <div class="time">12:43</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-result__stage">
+                            <div class="status-result__stage-icon"><img src="img/rsa2.png" alt=""></div>
+                            <div class="status-result__stage-content">
+                                <p>РСА</p>
+                                <div class="date-wrap">
+                                    <div class="date">02.03.2020</div>
+                                    <div class="time">12:43</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-result__stage">
+                            <div class="status-result__stage-icon"><img src="img/test.svg" alt=""></div>
+                            <div class="status-result__stage-content">
+                                <p>Выполнена</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="contacts-box">
-                    <span class="icon fas fa-phone"></span>
-                    <div class="contacts-box__content">
-                        <h3>Номер телефона РСА</h3>
-                        <a href="tel:+78002002275" class="phone">8(800) 200 22 75</a>
-                    </div>
-                </div>
-
-                <div class="contacts-box">
-                    <span class="icon far fa-envelope"></span>
-                    <div class="contacts-box__content">
-                        <h3>Электронная почта</h3>
-                        <a href="mailto:reques@autoins.ru" class="mail">reques@autoins.ru</a>
-                    </div>
-                </div>
-
-                <div class="contacts-box">
-                    <span class="icon fas fa-map-marker-alt"></span>
-                    <div class="contacts-box__content">
-                        <h3>Адрес</h3>
-                        <p>Москва, ул. Люсиновская, д. 27, строение 3</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <div class="maps">
-                    <iframe src="https://yandex.ru/map-widget/v1/-/CWt1VJmS" style="position:relative;"></iframe>
                 </div>
             </div>
         </div>
