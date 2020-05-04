@@ -87,4 +87,6 @@ $( function() {
 } );
 
 
+// mask
+$('.mask-driver').mask('99 ** 999999');
 

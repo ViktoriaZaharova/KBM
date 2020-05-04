@@ -79,13 +79,13 @@
                                 <a href="#" class="menu-links">Проверить КБМ</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="menu-links">Восстановить КБМ</a>
+                                <a href="#" class="menu-links active">Восстановить КБМ</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#" class="menu-links">Таблица КБМ</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="menu-links active">Проверить статус заявки</a>
+                                <a href="#" class="menu-links">Проверить статус заявки</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#" class="menu-links">Контакты</a>
@@ -99,19 +99,29 @@
 </header>
 <!--header-->
 
-<div class="content-section content-section-verify content-section-verify__two">
+<div class="content-section content-reestablish">
     <div class="container">
 
         <div class="row">
 
+            <div class="col-12">
+                <!--        breadcrumbs-->
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><span>Восстановить КБМ</span></li>
+                </ul>
+                <!--        breadcrumbs-->
+            </div>
+
             <div class="col-12 col-md-6">
-                <h1>Проверить КБМ по базе РСА</h1>
+                <h1>Восстановить КБМ
+                    заявка в базу РСА</h1>
 
                 <div class="status-info">
-                    <p>Для того чтобы узнать КБМ заполните поля ниже, проверка КБМ производится бесплатно по официальной
-                        базе РСА в режиме онлайн. Каждый гражданин РФ согласно закону РФ № 40-ФЗ от 5 апреля 2002 г.
-                        может получить скидку КБМ в ОСАГО за безаварийное вождение автомобиля, максимальная скидка
-                        составляет 50%</p>
+                    <p>Оформление официальной онлайн заявки на восстановление КБМ проводится согласно ФЗ от 25.04.2002 N
+                        40-ФЗ. Гарантируем сохранность и безопасность ваших данных в соответствии с ФЗ «О персональных
+                        данных»
+                    </p>
                 </div>
             </div>
 
@@ -119,166 +129,160 @@
                 <div class="image-herb"><img class="lozad" data-src="img/herb.png" alt=""></div>
             </div>
 
-            <div class="col-12 col-md-6">
-                <div class="inquiry">
-                    <h6>Данные на которые был запрос на дату 23.02.2020 г.</h6>
-
-                    <table class="table">
-                        <tr>
-                            <td>
-                                <p>Фамилия:</p>
-                            </td>
-                            <td>
-                                <strong>Иванов</strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Имя:</p>
-                            </td>
-                            <td>
-                                <strong>Иван</strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><p>Отчество:</p></td>
-                            <td><strong>Иванович</strong></td>
-                        </tr>
-                        <tr>
-                            <td><p>Дата рождения:</p></td>
-                            <td><strong>12.03.1985</strong></td>
-                        </tr>
-                        <tr>
-                            <td><p>Страховая компания:</p></td>
-                            <td><strong>Росгосстрах</strong></td>
-                        </tr>
-                        <tr>
-                            <td><p>Серия и номер ВУ:</p></td>
-                            <td><strong>9912 199394</strong></td>
-                        </tr>
-                    </table>
-
-                    <form method="post" class="form form-verify">
-                        <div class="form-group">
-                            <label class="checkbox">
-                                <span class="label">Меняли фамилию?</span>
-                                <input class="checkbox-inp" type="checkbox" name="checkbox">
-                                <span class="checkbox-custom"></span>
-                            </label>
-                            <label>
-                                <input type="text" placeholder="Петров" name="name">
-                            </label>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="checkbox checkbox-check">
-                                <span class="label">Была замена ВУ?</span>
-                                <input class="checkbox-inp" type="checkbox" name="checkbox">
-                                <span class="checkbox-custom"></span>
-                            </label>
-                            <label>
-                                <input type="text" placeholder="61ОР 609262" name="number" required>
-                            </label>
-                            <span>Серия и номер предыдущих прав,
-если была замена.</span>
-                        </div>
-
-                    </form>
-
-                    <div class="button-group">
-                        <a href="#" class="btn btn-border__black"><span class="icon fas fa-angle-left"></span> Изменить
-                            данные </a>
-                        <a href="#" class="btn btn-border__black">Сохранить <span
-                                class="icon fas fa-angle-right"></span></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6">
-                <div class="attention">
-                    <h6>Внимание!</h6>
-
-                    <ul>
-                        <li>Обязательно проверьте данные, указанные
-                            слева в окне. Если вы допустили ошибку при
-                            вводе, нажмите кнопку “Исправить данные”
-                            и подайте заявку повторно.
-                        </li>
-                        <li>Если данные указаны верно, напишите Ваш
-                            адрес электронной почты, для того, чтобы
-                            мы оповестили вас о изменении КБМ
-                        </li>
-                    </ul>
-                </div>
-
-                <form method="post" class="form form-verify">
-                    <label>
-                        <span class="form-title">Адрес эл. почты:*</span>
-                        <input type="text" placeholder="example@mail.ru" name="mail" required>
-                    </label>
-
-                    <label>
-                        <span class="form-title">Способ оплаты: *</span>
-                        <select name="number" class="select" required>
-                            <option>Банковская карта</option>
-                            <option selected="selected">Безналичный расчет</option>
-                            <option>Наличные</option>
-                        </select>
-                    </label>
-
-                    <label class="label-date">
-                        <span class="form-title">Дата справки:</span>
-                        <span class="input-group">
-                            <input type="text" placeholder="12.03.1985" name="text" class="datepicker">
-                        </span>
-                    </label>
-                </form>
-            </div>
-
-
             <div class="col-12">
 
-                <div class="total-line">
-                    <div class="total-sum">Итого:
-                        <div class="sum">490 <span>руб.</span></div>
-                    </div>
-                </div>
-
-                <div class="total-line">
-                    <ul class="list-protection">
-                        <li><img src="img/https.png" alt=""></li>
-                        <li><img src="img/3ds.png" alt=""></li>
-                        <li><img src="img/visa.png" alt=""></li>
-                    </ul>
-                </div>
-
-                <div class="line-wrapper">
-                    <div class="warranty color-green">
-                        <div class="icon"><img src="img/shield.png" alt=""></div>
-                        <p>“Гарантируем возврат денежных средств, при невыполнении услуги в срок,
-                            указанный в описании к каждой услуге”</p>
-                    </div>
-
-                    <div class="box-right">
-                        <a href="#" class="btn btn-accent">
-                            Оплатить
-                            <span class="icon fas fa-chevron-right"></span>
-                        </a>
-
-                        <div class="consent">
-                            <label class="checkbox checkbox-check">
-                                <input class="checkbox-inp" type="checkbox" name="checkbox">
-                                <span class="checkbox-custom"></span>
-                                <span class="label">Согласен с правилами
-предоставления информации</span>
+                <div class="row">
+                    <form method="post" class="form form-verify">
+                        <div class="col-12 col-md-6 col-lg-3 col-box">
+                            <label>
+                                <span class="form-title">Фамилия: *</span>
+                                <input type="text" placeholder="Иванов" name="name" required>
                             </label>
                         </div>
-                    </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 col-box">
+                            <label>
+                                <span class="form-title">Имя: *</span>
+                                <input type="text" placeholder="Иван" name="name" required>
+                            </label>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 col-box">
+                            <label>
+                                <span class="form-title">Отчество:</span>
+                                <input type="text" placeholder="Иванович" name="name">
+                            </label>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 col-box">
+                            <label class="label-date">
+                                <span class="form-title">Дата рождения: *</span>
+                                <span class="input-group">
+                            <input type="text" placeholder="12.03.1985" name="text" class="datepicker" required>
+                        </span>
+                            </label>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 col-box">
+                            <label>
+                                <span class="form-title">Серия и номер ВУ: *</span>
+                                <input type="text" placeholder="9912 199394" name="number" class="mask-driver" required>
+                            </label>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 col-box">
+                            <div class="form-group">
+                                <label class="checkbox">
+                                    <span class="label">Меняли фамилию?</span>
+                                    <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                </label>
+                                <label>
+                                    <input type="text" placeholder="Петров" name="name">
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-3 col-box">
+                            <div class="form-group">
+                                <label class="checkbox checkbox-check">
+                                    <span class="label">Была замена ВУ?</span>
+                                    <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                </label>
+                                <label>
+                                    <input type="text" placeholder="61ОР 609262" name="number" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 col-box">
+                                <div class="specify">Укажите серию и номер предыдущего
+                                    ВУ, если оно вам известно</div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <button class="btn btn-accent" type="submit">Проверить КБМ</button>
+
+                            <div class="consent">
+                                <label class="checkbox checkbox-check">
+                                    <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="label">Согласен с правилами предоставления информации</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="statistics">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Статистика базы РСА в 2020 году</h2>
+                <div class="description-statistic">Официальная сводка из базы РСа на проверку КБМ и восстановление скидки на ОСАГО в 2020 году,
+                    статистика обновляется ежедневно.
                 </div>
             </div>
 
-        </div>
 
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="statistics-box color-green">
+                    <div class="statistics-box__icon"><img src="img/checklist1.svg" alt=""></div>
+                    <div class="statistics-box__content">
+                        <div class="number">245 154</div>
+                        <p>Проверок КБМ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="statistics-box color-green">
+                    <div class="statistics-box__icon"><img src="img/renewable-energy.svg" alt=""></div>
+                    <div class="statistics-box__content">
+                        <div class="number">65 872</div>
+                        <p>Восстановление КБМ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="statistics-box color-green">
+                    <div class="statistics-box__icon"><img src="img/calculator.svg" alt=""></div>
+                    <div class="statistics-box__content">
+                        <div class="number">3 987</div>
+                        <p>Перерасчет ОСАГО</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="statistics-box color-green">
+                    <div class="statistics-box__icon"><img src="img/risk.svg" alt=""></div>
+                    <div class="statistics-box__content">
+                        <div class="number">8 562</div>
+                        <p>Аварийность</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-sale">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Скидка на ОСАГО - как получить?</h2>
+            </div>
+
+            <div class="col-12 col-lg-6"></div>
+
+            <div class="col-12 col-lg-6"></div>
+        </div>
     </div>
 </div>
 
@@ -383,6 +387,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>
