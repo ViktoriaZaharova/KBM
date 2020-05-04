@@ -1,9 +1,9 @@
 // visible news
 $('.all-news').on('click', function (e) {
     e.preventDefault();
-    $('.news-box:hidden').slice(0, 12).css('display', 'flex');
+    $('.news-box__item:hidden').slice(0, 12).css('display', 'flex');
 
-    var onBlock = $('.news-box:hidden').length;
+    var onBlock = $('.news-box__item:hidden').length;
     if(onBlock <= 0) {
         $('.all-news').hide();
     }
@@ -23,7 +23,7 @@ $(function () {
     var topPos = $('.sidebar').offset().top;
     $(window).scroll(function () {
         var top = $(document).scrollTop(),
-            pip = $('footer').offset().top,
+            pip = $('footer, .article-analog').offset().top,
             height = $('.sidebar').outerHeight();
         if (top > topPos && top < pip - height) {
             $('.sidebar').addClass('fixed').removeAttr("style");
