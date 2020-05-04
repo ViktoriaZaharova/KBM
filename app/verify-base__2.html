@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Autoins.org - проверка и восстановление КБМ</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<!--header-->
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="logo">
+                        <div class="logo-icon"><img src="img/rsa-logo.png" alt=""></div>
+                        <div class="logo-text">Autoins.org - проверка и восстановление КБМ</div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 d-none d-sm-flex justify-content-end">
+                    <div class="schedule header-box">
+                        <span class="far fa-clock icon"></span>
+                        <p>Сервис работает 24/7</p>
+                    </div>
+
+                    <a href="mailto:info@autoins.org" class="mail header-box">
+                        <span class="far fa-envelope icon"></span>
+                        <span>info@autoins.org</span>
+                    </a>
+
+                    <a href="tel:+78002003512" class="phone header-box">
+                        <span class="fas fa-phone icon"></span>
+                        <span>8(800) 200 35 12</span>
+                    </a>
+                </div>
+
+                <div class="d-flex d-sm-none">
+                    <div class="btn-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">Проверить КБМ</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">Восстановить КБМ</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">Таблица КБМ</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links active">Проверить статус заявки</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--header-->
+
+<div class="content-section content-section-verify content-section-verify__two">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12 col-md-6">
+                <h1>Проверить КБМ по базе РСА</h1>
+
+                <div class="status-info">
+                    <p>Для того чтобы узнать КБМ заполните поля ниже, проверка КБМ производится бесплатно по официальной
+                        базе РСА в режиме онлайн. Каждый гражданин РФ согласно закону РФ № 40-ФЗ от 5 апреля 2002 г.
+                        может получить скидку КБМ в ОСАГО за безаварийное вождение автомобиля, максимальная скидка
+                        составляет 50%</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 d-none d-md-flex">
+                <div class="image-herb"><img class="lozad" data-src="img/herb.png" alt=""></div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="inquiry">
+                    <h6>Данные на которые был запрос на дату 23.02.2020 г.</h6>
+
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <p>Фамилия:</p>
+                            </td>
+                            <td>
+                                <strong>Иванов</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Имя:</p>
+                            </td>
+                            <td>
+                                <strong>Иван</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p>Отчество:</p></td>
+                            <td><strong>Иванович</strong></td>
+                        </tr>
+                        <tr>
+                            <td><p>Дата рождения:</p></td>
+                            <td><strong>12.03.1985</strong></td>
+                        </tr>
+                        <tr>
+                            <td><p>Страховая компания:</p></td>
+                            <td><strong>Росгосстрах</strong></td>
+                        </tr>
+                        <tr>
+                            <td><p>Серия и номер ВУ:</p></td>
+                            <td><strong>9912 199394</strong></td>
+                        </tr>
+                    </table>
+
+                    <form method="post" class="form">
+                        <div class="form-group">
+                            <label class="checkbox">
+                                <span class="label">Меняли фамилию?</span>
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <label>
+                                <input type="text" placeholder="Петров" name="name">
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox checkbox-check">
+                                <span class="label">Была замена ВУ?</span>
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                            </label>
+                            <label>
+                                <input type="text" placeholder="61ОР 609262" name="number" required>
+                            </label>
+                            <span>Серия и номер предыдущих прав,
+если была замена.</span>
+                        </div>
+
+                    </form>
+
+                    <div class="button-group">
+                        <a href="#" class="btn btn-border__black"><span class="icon fas fa-angle-left"></span> Изменить
+                            данные </a>
+                        <a href="#" class="btn btn-border__black">Сохранить <span
+                                class="icon fas fa-angle-right"></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="attention">
+                    <h6>Внимание!</h6>
+
+                    <ul>
+                        <li>Обязательно проверьте данные, указанные
+                            слева в окне. Если вы допустили ошибку при
+                            вводе, нажмите кнопку “Исправить данные”
+                            и подайте заявку повторно.
+                        </li>
+                        <li>Если данные указаны верно, напишите Ваш
+                            адрес электронной почты, для того, чтобы
+                            мы оповестили вас о изменении КБМ
+                        </li>
+                    </ul>
+                </div>
+
+                <form method="post" class="form">
+                    <label>
+                        <span class="form-title">Адрес эл. почты:*</span>
+                        <input type="text" placeholder="example@mail.ru" name="mail">
+                    </label>
+
+                    <label>
+                        <span class="form-title">Способ оплаты: *</span>
+                        <select name="number" class="select">
+                            <option>Банковская карта</option>
+                            <option selected="selected">Безналичный расчет</option>
+                            <option>Наличные</option>
+                        </select>
+                    </label>
+
+                    <label class="label-date">
+                        <span class="form-title">Дата справки:</span>
+                        <span class="input-group">
+                            <input type="text" placeholder="12.03.1985" name="text" class="datepicker">
+                        </span>
+                    </label>
+                </form>
+            </div>
+
+
+            <div class="col-12">
+
+                <div class="total-line">
+                    <div class="total-sum">Итого:
+                        <div class="sum">490 <span>руб.</span></div>
+                    </div>
+                </div>
+
+                <div class="total-line">
+                    <ul class="list-protection">
+                        <li><img src="img/https.png" alt=""></li>
+                        <li><img src="img/3ds.png" alt=""></li>
+                        <li><img src="img/visa.png" alt=""></li>
+                    </ul>
+                </div>
+
+                <div class="line-wrapper">
+                    <div class="warranty color-green">
+                        <div class="icon"><img src="img/shield.png" alt=""></div>
+                        <p>“Гарантируем возврат денежных средств, при невыполнении услуги в срок,
+                            указанный в описании к каждой услуге”</p>
+                    </div>
+
+                    <div class="box-right">
+                        <a href="#" class="btn btn-accent">
+                            Оплатить
+                            <span class="icon fas fa-chevron-right"></span>
+                        </a>
+
+                        <div class="consent">
+                            <label class="checkbox checkbox-check">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Согласен с правилами
+предоставления информации</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<footer>
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="logo">
+                        <div class="logo-icon"><img src="img/rsa-logo.png" alt=""></div>
+                        <div class="logo-text">Autoins.org - проверка и восстановление КБМ</div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-7 ">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Проверить КБМ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Восстановить КБМ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Таблица КБМ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Статус заявки</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-links">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="info-document">
+                        <p>Безопасность операций подтверждена сертификатом соответствия международному стандарту PCI
+                            DSS. Услуги по переводу денежных средств оказывает Обществом с ограниченной ответственностью
+                            «Бизнес Элемент») (ИНН 5047063929, ОГРН 1055009302215, местонахождение (адрес): 129344, г.
+                            Москва, ул. Искры, д. 31, к.1, ком. 15А пом. III</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 offset-lg-2">
+
+                    <div class="footer-box">
+                        <p>Платежи защищены:</p>
+                        <ul class="list-protection">
+                            <li><img src="img/https.png" alt=""></li>
+                            <li><img src="img/3ds.png" alt=""></li>
+                            <li><img src="img/visa.png" alt=""></li>
+                        </ul>
+                    </div>
+
+                    <div class="box-social footer-box">
+                        <p>Отзывы о нас:</p>
+                        <ul class="list-social">
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex">
+                    <a href="#" class="menu-footer__links">
+                        <i class="fas fa-sitemap"></i>
+                        Карта сайта
+                    </a>
+                    <ul class="menu-footer">
+                        <li class="menu-footer__item"><a href="#" class="menu-footer__links">Политика обработки
+                            данных</a></li>
+                        <li class="menu-footer__item"><a href="#" class="menu-footer__links">Пользовательское
+                            соглашение</a></li>
+                    </ul>
+                    <a href="#" class="menu-footer__links">
+                        Новости и статьи
+                    </a>
+                    <div class="copyright">© 2020 г. Все права защищены</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
