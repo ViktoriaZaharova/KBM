@@ -4,7 +4,7 @@ $('.all-news').on('click', function (e) {
     $('.news-box__item:hidden').slice(0, 12).css('display', 'flex');
 
     var onBlock = $('.news-box__item:hidden').length;
-    if(onBlock <= 0) {
+    if (onBlock <= 0) {
         $('.all-news').hide();
     }
 });
@@ -35,6 +35,22 @@ $(function () {
     });
 });
 
+$(function () {
+    var topPos = $('.question-list').offset().top;
+    $(window).scroll(function () {
+        var top = $(document).scrollTop(),
+            pip = $('footer').offset().top,
+            height = $('.question-list').outerHeight();
+        if (top > topPos && top < pip - height) {
+            $('.question-list').addClass('fixed').removeAttr("style");
+        } else if (top > pip - height) {
+            $('.question-list').removeClass('fixed').css({'position': 'absolute', 'top': '0'});
+        } else {
+            $('.question-list').removeClass('fixed');
+        }
+    });
+});
+
 
 // lazy load
 $(document).ready(function () {
@@ -55,26 +71,26 @@ $('.go_to').click(function () {
 });
 
 // select
-$( ".select" )
+$(".select")
     .selectmenu()
-    .selectmenu( "menuWidget" )
-    .addClass( "overflow" );
+    .selectmenu("menuWidget")
+    .addClass("overflow");
 
 // calendar
-$( function() {
+$(function () {
     //Сменим язык календаря на русский
     $.datepicker.setDefaults(
         {
             closeText: 'Закрыть',
             prevText: '',
             currentText: 'Сегодня',
-            monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
-                'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-            monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
-                'Июл','Авг','Сен','Окт','Ноя','Дек'],
-            dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
-            dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
-            dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+            monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+                'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+            monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн',
+                'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+            dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+            dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+            dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
             weekHeader: 'Не',
             dateFormat: 'dd.mm.yy',
             firstDay: 1,
@@ -83,10 +99,31 @@ $( function() {
             yearSuffix: ''
         });
     //Добавим код календаря
-    $( ".datepicker" ).datepicker();
-} );
+    $(".datepicker").datepicker();
+});
 
 
 // mask
 $('.mask-driver').mask('99 ** 999999');
+
+// slider range
+$(".slider-range-1").slider({
+    range: "min",
+
+});
+$(".slider-range-2").slider({
+    range: "min",
+
+});
+
+
+// table hover
+$(".kbm-table td").on("mouseenter mouseleave", function () {
+        var td_index = $(this).index();
+        $(this).parents("tr").toggleClass("lighting_tr");
+        $(this).parents(".kbm-table").find("tr").each(function () {
+            $("td:eq(" + td_index + ")", this).toggleClass("lighting_col");
+        });
+        $(this).toggleClass("lighting_cell");
+});
 
