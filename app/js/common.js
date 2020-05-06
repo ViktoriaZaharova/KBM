@@ -109,12 +109,27 @@ $(function () {
 // slider range
 $(".slider-range-1").slider({
     range: "min",
+    min: 0,
+    max: 15,
+    value: 0
 
 });
 $(".slider-range-2").slider({
     range: "min",
-
+    min: 0,
+    max: 10,
+    value: 0
 });
+
+// активная ссылка меню
+$('header .menu li a').each(function () {
+    var location = window.location.href;
+    var link = this.href;
+    if (location == link) {
+        $(this).addClass('active');
+    }
+});
+// end
 
 
 // table hover
@@ -130,5 +145,4 @@ $(".kbm-table td").on("mouseenter mouseleave", function () {
 $('.verify-variable').click(function () {
    $(this).toggleClass('active');
 });
-
 

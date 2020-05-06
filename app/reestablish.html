@@ -79,13 +79,13 @@
                                 <a href="verify-base.html" class="menu-links">Проверить КБМ</a>
                             </li>
                             <li class="menu-item">
-                                <a href="index.html" class="menu-links active">Восстановить КБМ</a>
+                                <a href="reestablish.html" class="menu-links">Восстановить КБМ</a>
                             </li>
                             <li class="menu-item">
                                 <a href="reestablish3.html" class="menu-links">Таблица КБМ</a>
                             </li>
                             <li class="menu-item">
-                                <a href="status.html" class="menu-links">Статус заявки</a>
+                                <a href="status.html" class="menu-links">Проверить статус заявки</a>
                             </li>
                             <li class="menu-item">
                                 <a href="news.html" class="menu-links">Новости РСА</a>
@@ -102,19 +102,29 @@
 </header>
 <!--header-->
 
-<div class="content-section content-reestablish content-verify">
+<div class="content-section content-reestablish">
     <div class="container">
 
         <div class="row">
 
+            <div class="col-12">
+                <!--        breadcrumbs-->
+                <ul class="breadcrumbs">
+                    <li><a href="reestablish.html">Главная</a></li>
+                    <li><span>Восстановить КБМ</span></li>
+                </ul>
+                <!--        breadcrumbs-->
+            </div>
+
             <div class="col-12 col-md-6">
-                <h1>Проверить КБМ по базе РСА</h1>
+                <h1>Восстановить КБМ
+                    заявка в базу РСА</h1>
 
                 <div class="status-info">
-                    <p>Для того чтобы узнать КБМ заполните поля ниже, проверка КБМ производится бесплатно по официальной
-                        базе РСА в режиме онлайн. Каждый гражданин РФ согласно закону РФ № 40-ФЗ от 5 апреля 2002 года
-                        может получить скидку КБМ в ОСАГО за безаварийное вождение автомобиля, максимальная скидка
-                        составляет 50%</p>
+                    <p>Оформление официальной онлайн заявки на восстановление КБМ проводится согласно ФЗ от 25.04.2002 N
+                        40-ФЗ. Гарантируем сохранность и безопасность ваших данных в соответствии с ФЗ «О персональных
+                        данных»
+                    </p>
                 </div>
             </div>
 
@@ -151,7 +161,7 @@
                             <label class="label-date">
                                 <span class="form-title">Дата рождения: *</span>
                                 <span class="input-group">
-                            <input type="text" placeholder="12.03.1985" name="text" class="datepicker" required>
+                            <input type="text" placeholder="12.03.1985" name="date" class="datepicker" required>
                         </span>
                             </label>
                         </div>
@@ -210,21 +220,6 @@
                     </form>
                 </div>
 
-            </div>
-
-            <div class="col-12">
-                <div class="required-information">
-                    <div class="required-information__icon"><img src="img/eagle.png" alt=""></div>
-                    <div class="required-information__content">
-                        <p>“РСА - Российский Союз Автостраховщиков, некоммерческая организация, которая осуществляет
-                            обязательное страхование
-                            гражданской ответственности автолюбителей. Содержит 105 страховых компаний на 2020 год,
-                            информация о коэффициенте
-                            бонусе малусе находится в базе РСА, данную информацию ежегодная предоставляют страховые
-                            компании.“
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -400,7 +395,7 @@
                 <div class="cost-wrapper">
                     <p>Стоимость ОСАГО:</p>
 
-                    <div class="cost">5 960 руб.</div>
+                    <input class="cost" type="text">
                 </div>
 
                 <div class="sale-attention">
@@ -417,9 +412,9 @@
             </div>
 
             <div class="col-12 col-lg-6">
-                <div class="section-sale__img section-no-sale color-red"><img class="lozad" data-src="img/polis.jpg"
-                                                                              alt="">
-                    <p>СКИДКА ОТСУТСТВУЕТ</p></div>
+                <div class="section-sale__img section-no-sale color-green section-sale-50"><img class="lozad" data-src="img/polis.jpg" alt="">
+                <p>Скидка 50%</p>
+                </div>
             </div>
         </div>
     </div>
@@ -429,45 +424,73 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2>Как узнать свой КБМ</h2>
-
+                <h2>Как восстановить КБМ?</h2>
 
             </div>
 
             <div class="col-12 col-md-6">
                 <div class="box-info">
-                    <p>Общее количество заявок на проверку и восстановление КБМ через РСА за 2020 год, статистика
-                        расчета коэффициента бонус малус обновляется ежедневно.</p>
+                    <p>Каждый гражданин РФ вправе восстановить КБМ через РСА по официальной форме, согласно ФЗ
+                        25.04.2002 №40-ФЗ. Восстановление КБМ в сренем занимает 24 часа, при обработке в ручном режиме,
+                        срок может увеличиваться до 7 рабочих дней.</p>
                 </div>
+                <h6>
+                    <span class="icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+			c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
+			l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
+			c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"/>
+	</g>
+</g>
+
+</svg>
+                </span>
+                    Инструкция
+                </h6>
+
                 <ul class="stages">
                     <li>
                         <div class="number">1</div>
-                        <p>Заполните все формы для проверки: ФИО, дату рождения, серию и номер ВУ,
-                            если вы меняли водительское удостоверение рекомендуем указать предыдущее
-                            ВУ, это нужно чтобы проверить восстановили ли вам КБМ после замены
-                            водительского удостоверения
-                        </p>
+                        <p>Выбираете пункт на сайте “восстановление КБМ” </p>
                     </li>
                     <li>
                         <div class="number">2</div>
-                        <p>При нажатии на кнопку “проверить КБМ” мы делаем запрос в официальную базу
-                            РСА и получаем ответ в режиме онлайн. В среднем на ответ уходит до 5 секунд,
-                            мы работаем по официальному API РСА.
-                        </p>
+                        <p>Введите данные: ФИО, дата рождения, серия и номер ВУ
+                            (если вы меняли ВУ или паспорт, вводите серию и номер старого ВУ
+                            или ФИО старого паспорта, так шанс на восстановление КБМ увеличится)</p>
                     </li>
                     <li>
                         <div class="number">3</div>
-                        <p>Ответ содержит информацию о вашей скидке на ОСАГО, проверка КБМ является
-                            бесплатной согласно ФЗ №40 от 05.04.2002. Укажите ваш стаж вождения и система
-                            покажет правильно ли вам применен КБМ. Если КБМ применили неверно, подайте
-                            заявку на восстановление КБМ
+                        <p>Нажимаете на кнопку “Узнать КБМ” </p>
+                    </li>
+                    <li>
+                        <div class="number">4</div>
+                        <p>Далее мы направим запрос в РСА и система произведет расчет КБМ,
+                            в течении 5 секунд вы увидите вашу скидку на ОСАГО.</p>
+                    </li>
+                    <li>
+                        <div class="number">5</div>
+                        <p>После достаточно выбрать услугу “восстановить КБМ” и произвести оплату.</p>
+                    </li>
+                    <li>
+                        <div class="number">6</div>
+                        <p>На почту мы направляем письмо с подтверждением оплаты, вы сможете
+                            отслеживать статус Вашей заявки в базе РСА </p>
+                    </li>
+                    <li>
+                        <div class="number">7</div>
+                        <p>Средний срок выполнения заявки 24 часа (в редких случаях ручной
+                            обработки в РСА, заявка может обрабатываться до 7 рабочих дней)
                         </p>
                     </li>
                 </ul>
             </div>
 
             <div class="col-12 col-md-6">
-                <div class="video-wrapper">
+                <div class="video-wrapper justify-content-end">
                     <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -477,73 +500,139 @@
     </div>
 </div>
 
-<div class="causes">
+<div class="section-warranty">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h2>Причины потери КБМ</h2>
-                <div class="box-text">
-                    <p>Самые частые причины, по которым КБМ водителей расчитан неверно, описаны ниже:</p>
-                </div>
+            <div class="col-12"><h2>Гарантии восстановления КБМ</h2>
+                <div class="box-text"><p>Почему стоит доверять нашему сервису
+                </p></div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="causes-box warranty-box">
-                    <div class="warranty-box__icon"><img src="img/driver-license1.png" alt=""></div>
-                    <h3>Замена ВУ</h3>
+            <div class="col-12 warranty-wrapper">
+                <div class="warranty-box">
+                    <div class="warranty-box__icon"><img src="img/test.png" alt=""></div>
+                    <h3>Официальная
+                        заявка в РСА </h3>
                     <div class="warranty-box__text">
-                        <p>Если вы поменяли водительское
-                            удостоверения ваш КБМ
-                            на новых правах будет равен
-                            единице, его обязательно нужно
-                            перенести с предыдущего ВУ
+                        <p>Мы работаем только
+                            по официальному методу,
+                            все ваши заявки находятся
+                            в официальной базе
+                            Российского Союза
+                            Автостраховщиков,
+                            после выполнения заявки
+                            вы сможете проверить
+                            изменение вашего КБМ
+                            в официальной базе РСА.
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="causes-box warranty-box">
-                    <div class="warranty-box__icon"><img src="img/error.png" alt=""></div>
-                    <h3>Ошибка страховой
-                        компании</h3>
+                <div class="warranty-box">
+                    <div class="warranty-box__icon"><img src="img/money.png" alt=""></div>
+                    <h3>Гарантированный
+                        возврат денежных
+                        средств. </h3>
                     <div class="warranty-box__text">
-                        <p>Страховая компания разорилась
-                            и не передала сведения в РСА,
-                            очень часто страховые
-                            компании не передают
-                            информацию в РСА.</p>
+                        <p>Если по техническим
+                            причинам заявка не будет
+                            обработана, или
+                            восстановление КБМ
+                            невозможно, мы вернем
+                            денежные средства.
+                        </p>
+                    </div>
+                </div>
+                <div class="warranty-box">
+                    <div class="warranty-box__number">
+                        с 2015 г.
+                    </div>
+                    <h3>Работаем
+                        с 2015 года</h3>
+                    <div class="warranty-box__text">
+                        <p>Мы работаем <span class="color-green">с <strong>2015</strong> года</span>
+                            и обработали более
+                            <strong class="color-green">245000</strong> (эта цифра растет)
+                            заявок на восстановление
+                            КБМ по всей России,
+                            нам можно доверять.
+                        </p>
+                    </div>
+                </div>
+                <div class="warranty-box">
+                    <div class="warranty-box__icon"><img src="img/help.png" alt=""></div>
+                    <h3>Оперативная
+                        поддержка</h3>
+                    <div class="warranty-box__text">
+                        <p>Если у Вас возникнут
+                            вопросы по Вашей заявки
+                            мы готовы ответить на них
+                            с 10:00 - 16:00, просто
+                            напишите нам на почту
+                            или позвоните по номеру
+                            и специалисты
+                            проконсультируют вас.
+                        </p>
+                    </div>
+                </div>
+                <div class="warranty-box">
+                    <div class="warranty-box__icon"><img src="img/like.png" alt=""></div>
+                    <h3>Разумная цена </h3>
+                    <div class="warranty-box__text">
+                        <p>Мы работаем длительное
+                            время, за 5 лет цена
+                            на услугу восстановления
+                            значительно
+                            уменьшилась, мы можем
+                            позволить делать скидку
+                            на восстановление КБМ. </p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="causes-box warranty-box">
-                    <div class="warranty-box__icon"><img src="img/seller.png" alt=""></div>
-                    <h3>Ошибка агента</h3>
-                    <div class="warranty-box__text">
-                        <p>Страховой агент допустил
-                            ошибку при вводе данных,
-                            очень часто они делают это
-                            специально что бы скидка
-                            не применялась </p>
-                    </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="insurance-company">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Восстановление КБМ по всем страховым компаниям </h2>
+
+                <div class="box-text">
+                    <p>Мы можем восстановить КБМ абсолютно во всех страховых компаниях, таких как Росгосстрах,
+                        Альфастрахование, Согласие, Югория, ЭРГО, Тинькофф, Ингосстрах, Ренессанс страхование, СГ
+                        Уралсиб, Астро - Волга, Армеец, Росэнерго, Зетта, ВСК, Надежда, СОГАЗ, МАКС, РЕСО - гарантия,
+                        ВТБ, Allianz и многие другие. </p>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="causes-box warranty-box">
-                    <div class="warranty-box__icon"><img src="img/customer-support.png" alt=""></div>
-                    <h3>Техническая ошибка
-                        в РСА</h3>
-                    <div class="warranty-box__text">
-                        <p>Ошибку допустили в РСА, такое
-                            бывает когда происходит
-                            технический сбой в РСА
-                            (редкая ошибка)</p>
-                    </div>
-                </div>
+
+            <div class="col-12 insurance-company__wrapper">
+                <div class="insurance-company__logo"><img src="img/logo1.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo2.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo3.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo4.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo5.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo6.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo7.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo8.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo16.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo9.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo10.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo11.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo12.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo13.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo14.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo15.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo17.png" alt=""></div>
+                <div class="insurance-company__logo"><img src="img/logo18.png" alt=""></div>
             </div>
         </div>
     </div>
 </div>
+
+
+
 <div class="question">
     <div class="container">
         <div class="row">
@@ -555,60 +644,43 @@
             <nav class="col-12 col-md-6" id="myScrollspy">
 
                 <ul class="question-list">
-                    <li><a href="#answer1" class="go_to">Что такое КБМ ?</a></li>
-                    <li><a href="#answer2" class="go_to">Как восстановить КБМ?</a></li>
-                    <li><a href="#answer3" class="go_to">КБМ 1 что это значит?</a></li>
+                    <li><a href="#answer1" class="go_to">Как узнать КБМ ?</a></li>
+                    <li><a href="#answer2" class="go_to">Как восстановить КБМ после замены прав?</a></li>
+                    <li><a href="#answer3" class="go_to">Как мы принимаем оплату?</a></li>
                 </ul>
             </nav>
 
             <div class="col-12 col-md-6">
-                <div class="answer" id="answer1">
-                    <p>КБМ - коэффициент бонус малус, скидка на ОСАГО которая применяется каждому водителю в РФ за
-                        безаварийное вождение, каждый год скидка прибавляется по 5%. Если водитель попадает в аварию его
-                        КБМ может возрасти и он получит надбавку на стоимость ОСАГО. Узнать как меняется скидка на ОСАГО
-                    </p>
-                </div>
-                <div class="answer" id="answer2">
-                    <p>Для того чтобы восстановить можно прибегнуть к нескольким способам:
-                    </p>
+                    <div class="answer" id="answer1">
+                        <p>Для официальной проверки КБМ водителя по базе РСА заполните поля выше, Укажите ФИО, дату
+                            рождения, серию и номер ВУ водителя, проверка производится бесплатно. Также можно
+                            использовать таблицу КБМ</p>
 
-                    <ul class="list-number">
-                        <li>Заполнить заявку на сайте, достаточно указать серию и номер ВУ, ФИО и дату рождения. Заявки
-                            в
-                            среднем обрабатываются в РСА за 24 часа
-                        </li>
+                        <a href="#" class="link-btn">
+                            Заполнить заявку <span class="icon fas fa-chevron-right"></span>
+                        </a>
+                    </div>
+                    <div class="answer" id="answer2">
+                        <p>Для восстановления КБМ после замены водительского удостоверения заполните заявку на сайте,
+                            обязательно укажите номер и серию предыдущего ВУ. Заявка будет обработана в среднем в
+                            течении 24 часов. </p>
 
-                        <li>Обратится в страховую компанию с заявлением на перерасчет КБМ, если вам откажут, потребуется
-                            обращение в ЦБ РФ.
-                        </li>
-                    </ul>
-
-                    <p>Если вам требуется гарантированный результат <a href="#" class="link-btn">
-                        заполните заявку <span class="icon fas fa-chevron-right"></span>
-                    </a></p>
-
-
-                </div>
-                <div class="answer" id="answer3">
-                    <ul class="list-number m-0">
-                        <li>Замена ВУ или паспорта</li>
-
-                        <li>Страховая компания разорилась и не передала сведения в РСА</li>
-
-                        <li>Автомобиль не был застрахован в течении года</li>
-
-                        <li>Страховой агент допустил ошибку</li>
-
-                        <li>Ошибку допустили в РСА</li>
-
-                        <li>У Вас несколько полисов ОСАГО</li>
-
-                    </ul>
-                </div>
+                        <a href="#" class="link-btn">
+                            Перенести КБМ <span class="icon fas fa-chevron-right"></span>
+                        </a>
+                    </div>
+                    <div class="answer" id="answer3">
+                        <p>Оплата производится банковской картой. Предоставленные официальные платежные системы,
+                            используются на территории Российской Федерации. Все платежные системы соответствуют
+                            Российским и международным стандартам безопасности. Данные шифруются защищенным
+                            криптографическим ключом SSL, а также протоколом безопасности HTTPS</p>
+                    </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 
 <footer>
@@ -629,7 +701,7 @@
                             <a href="verify-base.html" class="menu-links">Проверить КБМ</a>
                         </li>
                         <li class="menu-item">
-                            <a href="index.html" class="menu-links active">Восстановить КБМ</a>
+                            <a href="reestablish.html" class="menu-links">Восстановить КБМ</a>
                         </li>
                         <li class="menu-item">
                             <a href="reestablish3.html" class="menu-links">Таблица КБМ</a>
@@ -637,9 +709,7 @@
                         <li class="menu-item">
                             <a href="status.html" class="menu-links">Статус заявки</a>
                         </li>
-                        <li class="menu-item">
-                            <a href="news.html" class="menu-links">Новости РСА</a>
-                        </li>
+
                         <li class="menu-item">
                             <a href="contacts.html" class="menu-links">Контакты</a>
                         </li>
@@ -715,5 +785,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 <script src="js/common.js"></script>
+
 </body>
 </html>
