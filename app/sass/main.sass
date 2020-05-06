@@ -1022,9 +1022,12 @@ footer
 
   .links
     color: #092153
-
+    border-bottom: 1px dotted #092153
+    text-decoration: none
   .link-btn
     margin: 6px 0 0
+    border-bottom: 1px dotted #092153
+    text-decoration: none
 
 .links-red, .color-red
   color: #790f10
@@ -1501,6 +1504,9 @@ strong
 
   .line-wrapper
     margin: 0 0 12px
+    a
+      text-decoration: none
+      border-bottom: 1px dotted #092153
   &__img
     position: relative
     p
@@ -1850,7 +1856,8 @@ strong
     a
       color: #1d1d1f
       font-size: 18px
-      text-decoration: underline
+      border-bottom: 1px dotted #1d1d1f
+      display: inline-flex
       &:hover
         color: #020b80
 
@@ -1869,6 +1876,7 @@ strong
     font-weight: normal
     text-decoration: none
     display: inline-block
+    border-bottom: 1px dotted #1d1d1f
     &:hover
       color: #020b80
   &:last-child

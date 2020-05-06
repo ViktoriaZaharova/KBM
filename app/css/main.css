@@ -1117,9 +1117,13 @@ footer {
     text-decoration: underline;
     font-weight: bold; }
   .attention .links {
-    color: #092153; }
+    color: #092153;
+    border-bottom: 1px dotted #092153;
+    text-decoration: none; }
   .attention .link-btn {
-    margin: 6px 0 0; }
+    margin: 6px 0 0;
+    border-bottom: 1px dotted #092153;
+    text-decoration: none; }
 
 .links-red, .color-red {
   color: #790f10; }
@@ -1634,6 +1638,9 @@ strong {
     margin: 0 0 20px; }
   .section-sale .line-wrapper {
     margin: 0 0 12px; }
+    .section-sale .line-wrapper a {
+      text-decoration: none;
+      border-bottom: 1px dotted #092153; }
   .section-sale__img {
     position: relative; }
     .section-sale__img p {
@@ -2069,7 +2076,10 @@ strong {
   .question-list li a {
     color: #1d1d1f;
     font-size: 18px;
-    text-decoration: underline; }
+    border-bottom: 1px dotted #1d1d1f;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
     .question-list li a:hover {
       color: #020b80; }
 
@@ -2088,7 +2098,8 @@ strong {
     color: #1d1d1f;
     font-weight: normal;
     text-decoration: none;
-    display: inline-block; }
+    display: inline-block;
+    border-bottom: 1px dotted #1d1d1f; }
     .answer a:hover {
       color: #020b80; }
   .answer:last-child {
