@@ -103,8 +103,8 @@ $(function () {
 });
 
 
-// mask
-$('.mask-driver').mask('99 ** 999999');
+
+
 
 // slider range
 $(".slider-range-1").slider({
@@ -126,4 +126,9 @@ $(".kbm-table td").on("mouseenter mouseleave", function () {
         });
         $(this).toggleClass("lighting_cell");
 });
+
+$('.verify-variable').click(function () {
+   $(this).toggleClass('active');
+});
+
 
