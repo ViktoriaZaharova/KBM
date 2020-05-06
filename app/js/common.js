@@ -18,38 +18,7 @@ $("body").on("click", ".click-top", function () {
 });
 
 
-// fixed sidebar
-$(function () {
-    var topPos = $('.sidebar').offset().top;
-    $(window).scroll(function () {
-        var top = $(document).scrollTop(),
-            pip = $('footer, .article-analog').offset().top,
-            height = $('.sidebar').outerHeight();
-        if (top > topPos && top < pip - height) {
-            $('.sidebar').addClass('fixed').removeAttr("style");
-        } else if (top > pip - height) {
-            $('.sidebar').removeClass('fixed').css({'position': 'absolute', 'bottom': '0'});
-        } else {
-            $('.sidebar').removeClass('fixed');
-        }
-    });
-});
 
-$(function () {
-    var topPos = $('.question-list').offset().top;
-    $(window).scroll(function () {
-        var top = $(document).scrollTop(),
-            pip = $('footer').offset().top,
-            height = $('.question-list').outerHeight();
-        if (top > topPos && top < pip - height) {
-            $('.question-list').addClass('fixed').removeAttr("style");
-        } else if (top > pip - height) {
-            $('.question-list').removeClass('fixed').css({'position': 'absolute', 'top': '0'});
-        } else {
-            $('.question-list').removeClass('fixed');
-        }
-    });
-});
 
 
 // lazy load
@@ -69,6 +38,8 @@ $('.go_to').click(function () {
     }
     return false;
 });
+
+
 
 // select
 $(".select")
@@ -108,14 +79,14 @@ $(".slider-range-1").slider({
     range: "min",
     min: 0,
     max: 15,
-    value: 0
+    value: 9
 
 });
 $(".slider-range-2").slider({
     range: "min",
     min: 0,
     max: 10,
-    value: 0
+    value: 10
 });
 
 // активная ссылка меню
@@ -143,6 +114,56 @@ $('.verify-variable').click(function () {
     $(this).toggleClass('active');
 });
 
+
+
+// validate
+
+var form = $(".form");
+var newSurname = form.find("[name='oldSurname']"), newSeries = form.find("[name='seriesNumOld']"),
+    oldSurname = form.find("[name='oldSurname2']"), oldSeries = form.find("[name='seriesNumOld2']");
+var validator;
+
+jQuery.validator.setDefaults({
+    rules: {
+        name: {required: true, minlength: 3, cyryllic: true, noSpace: true},
+        surname: {required: true, minlength: 2, cyryllic: true, noSpace: true},
+        phone: {required: true},
+        select: {required: true},
+        email: {required: true, email: true},
+        fullname: {required: true, minlength: 5, fullNameCyryllic: true},
+        date: {required: true},
+        check: {required: true},
+        seriesNum: {required: true, minlength: 9, series: true},
+        seriesNumOld: {required: false, minlength: 9, series: true},
+        oldSurname: {
+            required: false, minlength: 1, cyryllic: true,
+            noSpace: true
+        },
+        middlename: {cyryllic: true, noSpace: true}
+    },
+    messages: {
+        check: "\u041e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u043f\u043e\u043b\u0435",
+        name: "",
+        surname: "",
+        phone: "",
+        email: ""
+    },
+    errorPlacement: function (error, element) {
+    },
+    submitHandler: function () {
+        if (newSeries.val()) oldSeries.val(newSeries.val());
+        if (newSurname.val()) oldSurname.val(newSurname.val());
+        var fd = new FormData($("form")[0]);
+        fd.append("cr", 2);
+        $.ajax({
+            type: "POST", url: "/", data: fd, processData: false, contentType: false,
+            dataType: "html"
+        }).done(function (data) {
+            if (data && data === "ok") window.location.href = "/pay/" + link
+        })
+    }
+});
+
 function checkBoxValidate() {
     var checkbox = $('.form-group-check input[type="checkbox"]:checked').length;
     if (checkbox) $(this).parents('.form-group-check').toggleClass('click').find(".mask-driver").removeAttr("disabled"); else $(".mask-driver").attr("disabled", "disabled")
@@ -151,3 +172,47 @@ function checkBoxValidate() {
 checkBoxValidate();
 $('.form-group-check input[type="checkbox"]').change(checkBoxValidate);
 
+
+
+function inputMask() {
+    $('input[name="phone"]').inputmask("+7 (999) 999-99-99");
+    $('input[name="date"]').inputmask("99.99.9999");
+    $('input[name="seriesNum"]').inputmask("99 ** 999999")
+}
+
+inputMask();
+
+// var checkboxes = $('.services input[type="checkbox"]');
+
+// fixed sidebar
+$(function () {
+    var topPos = $('.sidebar').offset().top;
+    $(window).scroll(function () {
+        var top = $(document).scrollTop(),
+            pip = $('footer, .article-analog').offset().top,
+            height = $('.sidebar').outerHeight();
+        if (top > topPos && top < pip - height) {
+            $('.sidebar').addClass('fixed').removeAttr("style");
+        } else if (top > pip - height) {
+            $('.sidebar').removeClass('fixed').css({'position': 'absolute', 'bottom': '0'});
+        } else {
+            $('.sidebar').removeClass('fixed');
+        }
+    });
+});
+
+$(function () {
+    var topPos = $('.question-list').offset().top;
+    $(window).scroll(function () {
+        var top = $(document).scrollTop(),
+            pip = $('footer').offset().top,
+            height = $('.question-list').outerHeight();
+        if (top > topPos && top < pip - height) {
+            $('.question-list').addClass('fixed').removeAttr("style");
+        } else if (top > pip - height) {
+            $('.question-list').removeClass('fixed').css({'position': 'absolute', 'top': '0'});
+        } else {
+            $('.question-list').removeClass('fixed');
+        }
+    });
+});
