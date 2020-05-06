@@ -103,9 +103,6 @@ $(function () {
 });
 
 
-
-
-
 // slider range
 $(".slider-range-1").slider({
     range: "min",
@@ -134,15 +131,23 @@ $('header .menu li a').each(function () {
 
 // table hover
 $(".kbm-table td").on("mouseenter mouseleave", function () {
-        var td_index = $(this).index();
-        $(this).parents("tr").toggleClass("lighting_tr");
-        $(this).parents(".kbm-table").find("tr").each(function () {
-            $("td:eq(" + td_index + ")", this).toggleClass("lighting_col");
-        });
-        $(this).toggleClass("lighting_cell");
+    var td_index = $(this).index();
+    $(this).parents("tr").toggleClass("lighting_tr");
+    $(this).parents(".kbm-table").find("tr").each(function () {
+        $("td:eq(" + td_index + ")", this).toggleClass("lighting_col");
+    });
+    $(this).toggleClass("lighting_cell");
 });
 
 $('.verify-variable').click(function () {
-   $(this).toggleClass('active');
+    $(this).toggleClass('active');
 });
+
+function checkBoxValidate() {
+    var checkbox = $('.form-group-check input[type="checkbox"]:checked').length;
+    if (checkbox) $(this).parents('.form-group-check').toggleClass('click').find(".mask-driver").removeAttr("disabled"); else $(".mask-driver").attr("disabled", "disabled")
+}
+
+checkBoxValidate();
+$('.form-group-check input[type="checkbox"]').change(checkBoxValidate);
 

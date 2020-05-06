@@ -1204,6 +1204,9 @@ strong {
 .checkbox-check .checkbox-inp:checked + .checkbox-custom::before {
   content: "\f0c8"; }
 
+.click.form-group-check .label {
+  text-decoration: underline; }
+
 .consent {
   margin: 14px 0 0; }
   .consent .label {

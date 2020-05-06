@@ -162,25 +162,26 @@
                     </table>
 
                     <form method="post" class="form form-verify">
-                        <div class="form-group">
+                        <div class="form-group form-group-check">
                             <label class="checkbox">
                                 <span class="label">Меняли фамилию?</span>
                                 <input class="checkbox-inp" type="checkbox" name="checkbox">
                                 <span class="checkbox-custom"></span>
                             </label>
                             <label>
-                                <input type="text" placeholder="Петров" name="name">
+                                <input type="text" placeholder="Петров" name="name" class="mask-driver" disabled>
                             </label>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group form-group-check">
                             <label class="checkbox">
                                 <span class="label">Была замена ВУ?</span>
                                 <input class="checkbox-inp" type="checkbox" name="checkbox">
                                 <span class="checkbox-custom"></span>
                             </label>
                             <label>
-                                <input type="text" placeholder="61ОР 609262" class="mask-driver" name="number" required>
+                                <input type="text" placeholder="61ОР 609262" name="number" class="mask-driver" disabled
+                                       required>
                             </label>
                             <span>Серия и номер предыдущих прав,
 если была замена.</span>
