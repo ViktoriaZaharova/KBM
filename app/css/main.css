@@ -2203,6 +2203,88 @@ table {
 .content-table-kbm {
   margin: 0 0 44px; }
 
+.history-page {
+  margin: 33px 0; }
+  .history-page .table {
+    max-width: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin: 14px 0; }
+    .history-page .table tr {
+      background: #fff; }
+      .history-page .table tr:nth-child(odd) {
+        background: rgba(247, 247, 255, 0.9); }
+  .history-page .links-accent {
+    display: inline-block;
+    margin: 0 0 0 auto;
+    float: right;
+    color: #3C5FDD;
+    font-weight: bold;
+    text-decoration: underline; }
+    .history-page .links-accent:hover {
+      text-decoration: none; }
+
+.table-history {
+  border-spacing: 0 6px;
+  border-collapse: separate;
+  font-size: 12px;
+  margin: 30px 0 38px; }
+  .table-history td, .table-history th {
+    vertical-align: middle;
+    text-align: center; }
+  .table-history tbody tr {
+    -webkit-box-shadow: 0 1.5935px 3.98374px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1.5935px 3.98374px rgba(0, 0, 0, 0.1);
+    background: #FCFCFF;
+    min-height: 21px; }
+    .table-history tbody tr td {
+      padding: 3px; }
+      .table-history tbody tr td:last-child {
+        max-width: 80px; }
+  .table-history thead {
+    font-weight: bold;
+    color: #303030; }
+  .table-history th {
+    text-align: center;
+    padding: 4px 0; }
+  .table-history .td-kbm {
+    max-width: 80px;
+    text-align: left; }
+  .table-history .td-year {
+    font-weight: bold;
+    min-width: 50px; }
+  .table-history .color-green {
+    color: #0CA600; }
+  .table-history .color-red {
+    color: #B50101; }
+
+.content-page-doc {
+  margin: 40px 0; }
+  .content-page-doc h1 {
+    margin: 0 0 30px; }
+  .content-page-doc .box-date {
+    margin: 20px 0; }
+  .content-page-doc .link {
+    display: inline;
+    text-decoration: underline; }
+  .content-page-doc ul {
+    margin: 0 0 15px; }
+    .content-page-doc ul li {
+      margin: 0 0 15px; }
+      .content-page-doc ul li strong {
+        margin: 0 0 10px;
+        display: inline-block; }
+      .content-page-doc ul li p {
+        width: 100%; }
+  .content-page-doc .box-text {
+    margin: 0; }
+  .content-page-doc h2 {
+    margin: 30px 0 20px; }
+  .content-page-doc p {
+    margin: 0 0 15px; }
+    .content-page-doc p:last-child {
+      margin: 0; }
+
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1030px; } }
