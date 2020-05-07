@@ -1593,6 +1593,9 @@ strong {
 
 .content-reestablish .consent .label {
   max-width: none; }
+  .content-reestablish .consent .label .link {
+    display: inline;
+    color: #1d1d1f; }
 
 .col-box {
   margin: 0 0 27px; }
