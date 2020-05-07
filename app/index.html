@@ -29,19 +29,54 @@
 
 <body>
 
+<div class="mobile-menu">
+    <div class="btn-close"></div>
+
+    <div class="logo">
+        <div class="logo-icon"><img src="img/rsa-logo.png" alt=""></div>
+        <div class="logo-text">Autoins.org - проверка и восстановление КБМ</div>
+    </div>
+
+    <ul class="menu">
+        <li class="menu-item">
+            <a href="index.html" class="menu-links">Проверить КБМ</a>
+        </li>
+        <li class="menu-item">
+            <a href="reestablish.html" class="menu-links">Восстановить КБМ</a>
+        </li>
+        <li class="menu-item">
+            <a href="reestablish3.html" class="menu-links">Таблица КБМ</a>
+        </li>
+        <li class="menu-item">
+            <a href="status.html" class="menu-links">Проверить статус заявки</a>
+        </li>
+        <li class="menu-item">
+            <a href="news.html" class="menu-links">Новости РСА</a>
+        </li>
+        <li class="menu-item">
+            <a href="contacts.html" class="menu-links">Контакты</a>
+        </li>
+    </ul>
+
+    <a href="tel:+78002003512" class="phone header-box">
+        <span class="fas fa-phone icon"></span>
+        <span>8(800) 200 35 12</span>
+    </a>
+</div>
+
 <!--header-->
 <header>
     <div class="header-top">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-10 col-md-11 col-lg-5">
                     <div class="logo">
                         <div class="logo-icon"><img src="img/rsa-logo.png" alt=""></div>
                         <div class="logo-text">Autoins.org - проверка и восстановление КБМ</div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 d-none d-sm-flex justify-content-end">
+                <div class="col-12 col-md-7 d-none d-lg-flex justify-content-end">
                     <div class="schedule header-box">
                         <span class="far fa-clock icon"></span>
                         <p>Сервис работает 24/7</p>
@@ -58,7 +93,7 @@
                     </a>
                 </div>
 
-                <div class="d-flex d-sm-none">
+                <div class="d-flex d-lg-none col-2 col-md-1">
                     <div class="btn-burger">
                         <span></span>
                         <span></span>
@@ -69,7 +104,7 @@
         </div>
     </div>
 
-    <div class="header-bottom">
+    <div class="header-bottom d-none d-lg-flex">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -621,17 +656,17 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-lg-5">
                     <div class="logo">
                         <div class="logo-icon"><img src="img/rsa-logo.png" alt=""></div>
                         <div class="logo-text">Autoins.org - проверка и восстановление КБМ</div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-7 ">
+                <div class="col-12 col-lg-7">
                     <ul class="menu">
                         <li class="menu-item">
-                            <a href="index.html" class="menu-links active">Проверить КБМ</a>
+                            <a href="index.html" class="menu-links">Проверить КБМ</a>
                         </li>
                         <li class="menu-item">
                             <a href="reestablish.html" class="menu-links">Восстановить КБМ</a>
@@ -664,7 +699,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 offset-lg-2">
+                <div class="col-12 col-lg-4 col-md-6 offset-lg-2">
 
                     <div class="footer-box">
                         <p>Платежи защищены:</p>
@@ -690,7 +725,7 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex">
+                <div class="col-12 d-flex flex-wrap">
                     <a href="#" class="menu-footer__links">
                         <i class="fas fa-sitemap"></i>
                         Карта сайта
@@ -711,6 +746,7 @@
     </div>
 
 </footer>
+
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>

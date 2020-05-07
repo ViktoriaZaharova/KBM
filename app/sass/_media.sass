@@ -5,53 +5,118 @@
     max-width: 1030px
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width : 1199px)
+  /**/
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width : 991px)
+  .info-document
+    font-size: 12px
+
+  footer
+    .logo
+      margin: 0 0 10px
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width : 767px)
+  .footer-box
+    margin: 0 0 13px
+
+  h1
+    font-size: 24px
+
+  .contacts-box
+    padding: 0 0 0 28px
+    margin: 0 0 26px
+    &:last-child
+      margin: 0 0 26px
+    .icon
+      left: 0
+
+  .contacts-box__one
+    padding: 0 0 0 78px
+    .contacts-box__content
+      min-height: auto
+
+  .maps
+    margin: 20px 0 0
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+  .logo
+    font-size: 12px
+    line-height: 1.17
+    &-icon
+      width: 30px
+      min-width: 30px
+
+  .footer-top
+    padding: 18px 0 10px
+
+  footer
+    .menu
+      flex-direction: column
+      align-items: flex-start
+      position: relative
+      padding: 18px 0 0
+      &:before
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translate(-50%,0)
+        top: 0
+        width: calc(100% + 30px)
+        height: 1px
+        background: #f7fafd
+      li
+        margin: 0 0 16px
+        &:last-child
+          margin: 0
+        a
+          font-size: 14px
+
+  .footer-box
+    flex-direction: column
+    align-items: flex-start
+    p
+      margin: 0 0 10px
+
+  .info-document
+    margin: 0 0 15px
+
+  .menu-footer__links
+    width: 100%
+
+  .copyright
+    margin: 16px 0 0
+
+  .menu-footer
+    flex-direction: column
+    width: 100%
+    align-items: flex-start
+    margin: 13px 0
+    li
+
+      margin: 0 0 13px 0
+
+  .footer-bottom
+    padding: 17px 0 22px
+
+  .maps-wrapper
+    .container
+      padding: 0
+
+  h1
+    font-size: 16px
+
+  .content-section h1
+    margin: 0 0 24px
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+  /**/
 
