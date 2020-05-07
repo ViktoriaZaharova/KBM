@@ -6,7 +6,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px)
-  /**/
+  .button-group .btn-border__black
+    width: 200px
 
 
 /* Medium Devices, Desktops */
@@ -18,14 +19,39 @@
     .logo
       margin: 0 0 10px
 
+  .table
+    max-width: none
+
+  .content-section-verify
+    margin: 26px 0 28px
+
+  .inquiry
+    margin: 13px 0 0
+    h6
+      font-size: 14px
+      font-weight: bold
+
+  .content-section-verify .status-info
+    color: #1d1d1f
+    p
+      font-size: 12px
+
+  .content-section-verify__two .table
+    margin: 16px 0 15px
+
+  .content-section-verify__two .attention
+    margin: 30px 0 28px
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
   .footer-box
     margin: 0 0 13px
 
-  h1
+  h1, .content-section-verify h1
     font-size: 24px
+
+
 
   .contacts-box
     padding: 0 0 0 28px
@@ -42,6 +68,15 @@
 
   .maps
     margin: 20px 0 0
+
+  .warranty
+    width: 100%
+    order: 1
+    margin: 25px 0 0
+
+  .content-section-verify
+    .line-wrapper
+      flex-wrap: wrap
 
 
 /* Extra Small Devices, Phones */
@@ -69,6 +104,62 @@
   .form-group__text
     order: 1
     margin: 18px 0 0
+
+  .content-section-verify .status-info
+    margin: 0
+
+  .table td
+    padding: 9px 14px
+
+  .table td:last-child
+    width: 39%
+
+  .form-verify .form-group .clarification
+    font-size: 10px
+
+  .form-verify .form-group span
+    font-size: 12px
+
+  .checkbox .checkbox-custom
+    width: 14px
+    height: 14px
+
+  .checkbox .checkbox-custom:before
+    font-size: 16px
+
+  .button-group .btn-border__black
+    width: auto
+    height: auto
+    box-shadow: none
+    border: none
+      bottom: 1px solid #092153
+      radius: 0
+    font-size: 14px
+
+  .ui-selectmenu-text
+    font-size: 12px
+
+  .total-line
+    margin: 0 0 15px
+
+  .consent .label
+    font-size: 12px
+    max-width: none
+
+  .line-wrapper
+    .box-right
+      width: 100%
+      .btn
+        margin: 0 auto
+        width: 100%
+        .icon
+          display: none
+
+  .warranty
+    font-size: 12px
+    .icon
+      margin: 0 10px 0 0
+
 
 @media only screen and (max-width : 480px)
   .logo
@@ -134,11 +225,14 @@
     .container
       padding: 0
 
-  h1
+  h1, .content-section-verify h1
     font-size: 16px
 
   .content-section h1
     margin: 0 0 24px
+
+  .content-section-verify h1
+    margin: 0 0 14px
 
   .status-result
     display: flex
@@ -189,6 +283,18 @@
       margin: 0
     &-icon
       margin: 0 auto 8px
+
+  .attention
+    font-size: 12px
+    padding: 17px 18px 20px 9px
+    h6
+      font-size: 14px
+      margin: 0 0 17px
+    ul
+      li
+        &:last-child
+          margin: 0
+
 
 
 /* Custom, iPhone Retina */
