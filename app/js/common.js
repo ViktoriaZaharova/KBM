@@ -47,6 +47,10 @@ $(".select")
     .selectmenu("menuWidget")
     .addClass("overflow");
 
+$('.ui-selectmenu-button').click(function () {
+   $(this).addClass('click');
+});
+
 // calendar
 $(function () {
     //Сменим язык календаря на русский
@@ -177,10 +181,26 @@ $('.form-group-check input[type="checkbox"]').change(checkBoxValidate);
 function inputMask() {
     $('input[name="phone"]').inputmask("+7 (999) 999-99-99");
     $('input[name="date"]').inputmask("99.99.9999");
-    $('input[name="seriesNum"]').inputmask("99 ** 999999")
+    $('input[name="seriesNum"]').inputmask("99 ** 999999");
+    $('input[name="email"]').inputmask({
+        mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+        greedy: false,
+        onBeforePaste: function (pastedValue, opts) {
+            pastedValue = pastedValue.toLowerCase();
+            return pastedValue.replace("mailto:", "");
+        },
+        definitions: {
+            '*': {
+                validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+                casing: "lower"
+            }
+        }
+    });
 }
 
 inputMask();
+
+
 
 // var checkboxes = $('.services input[type="checkbox"]');
 
