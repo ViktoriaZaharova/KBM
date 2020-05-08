@@ -18,7 +18,7 @@ $("body").on("click", ".click-top", function () {
 });
 
 
-
+$('.fancybox').fancybox();
 
 
 // lazy load
