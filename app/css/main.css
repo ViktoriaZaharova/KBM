@@ -2492,12 +2492,12 @@ table {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1030px; } }
 
-/* Large Devices, Wide Screens */
 @media only screen and (max-width: 1199px) {
   .button-group .btn-border__black {
-    width: 200px; } }
+    width: 200px; }
+  .warranty-box {
+    margin: 0 0 19px; } }
 
-/* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
   .info-document {
     font-size: 12px; }
@@ -2546,7 +2546,9 @@ table {
   .article-nav {
     margin: 0 0 19px; }
   .warranty-box-wrap {
-    margin: 0 0 19px; } }
+    margin: 0 0 19px; }
+  .forecast {
+    font-size: 18px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
@@ -2652,9 +2654,9 @@ table {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-  .content-reestablish {
+  .content-verify {
     margin: 26px 0 0; }
-    .content-reestablish h1 {
+    .content-verify h1 {
       margin: 0 0 8px; }
   .required-information {
     padding: 18px 19px 26px 15px;
@@ -2700,7 +2702,51 @@ table {
   .list-number {
     padding: 0; }
     .list-number li {
-      margin: 0 0 5px; } }
+      margin: 0 0 5px; }
+  .content-reestablish h1 {
+    margin: 0 0 8px; }
+  .recovery-stages .video-wrapper {
+    margin: 20px 0 0; }
+  .warranty-box {
+    width: 49%; }
+  .kbm-table__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .kbm-table__wrapper .form-verify {
+      width: 100%; }
+      .kbm-table__wrapper .form-verify label {
+        margin: 0 0 18px; }
+    .kbm-table__wrapper .line-wrapper {
+      width: 100%; }
+    .kbm-table__wrapper .btn {
+      margin: 0 auto; }
+  .line-wrapper-bottom {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 15px 0 0; }
+  .line-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .content-table-kbm .status-info p {
+    margin: 0 0 15px; }
+    .content-table-kbm .status-info p:last-child {
+      margin: 0; }
+  .forecast {
+    margin: 18px 0 0;
+    font-size: 14px; }
+  .kbm-table {
+    font-size: 11px; }
+  .kbm-table .th-kbm {
+    width: 50px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
@@ -2906,8 +2952,10 @@ table {
       margin: 13px 0 20px; }
   .stages li {
     padding: 0 0 10px 29px; }
-    .stages li:last-child:before {
-      display: block; }
+    .stages li:last-child {
+      padding: 0 0 0 29px; }
+      .stages li:last-child:before {
+        display: block; }
   .causes {
     margin: 0 0 29px; }
     .causes .box-text {
@@ -2918,7 +2966,39 @@ table {
     padding: 20px 15px 17px; }
     .warranty-box h3 {
       font-size: 14px;
-      font-weight: bold; } }
+      font-weight: bold; }
+  .section-warranty {
+    border: none;
+      border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: transparent;
+    padding: 0; }
+  .warranty-box {
+    padding: 11px 20px 18px; }
+  .insurance-company {
+    padding: 41px 0 0; }
+    .insurance-company h2 {
+      margin: 0 0 13px; }
+    .insurance-company .box-text {
+      margin: 0 0 23px; }
+  .insurance-company__logo {
+    margin: 0 0 20px;
+    width: 30%; }
+  .answer a {
+    font-size: 12px;
+    margin: 15px 0 0; }
+    .answer a .icon {
+      font-size: 12px; }
+  .question .box-text {
+    margin: 4px 0 15px; }
+  .history-page .table {
+    font-size: 12px; }
+  .table-history {
+    font-size: 10px;
+    margin: 20px 0; }
+  .table-history .td-year {
+    min-width: 40px; } }
 
 @media only screen and (max-width: 480px) {
   .logo {
@@ -3080,9 +3160,36 @@ table {
             box-shadow: none;
     border-bottom: 1px solid #092153;
     border-radius: 0;
-    margin: 15px auto 0; } }
+    margin: 15px auto 0; }
+  .content-reestablish h1 {
+    margin: 0 0 8px; }
+  .recovery-stages .box-subtitle {
+    display: none; }
+  .recovery-stages .video-wrapper iframe {
+    height: 147px; }
+  .warranty-box {
+    width: 100%; }
+  .section-warranty {
+    margin: 10px 0 0; }
+    .section-warranty .box-text {
+      margin: 9px 0 17px; }
+  .kbm-table {
+    margin: 20px 0 19px;
+    font-size: 6px; }
+  .content-table-kbm {
+    margin: 0 0 27px; }
+  .table-history {
+    font-size: 8px; }
+  .history-page .table td:last-child {
+    width: 50%; }
+  .history-page {
+    margin: 20px 0 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
   .form button {
-    width: 100%; } }
+    width: 100%; }
+  .table-history {
+    font-size: 6px; }
+  .history-page .links-accent {
+    font-size: 12px; } }

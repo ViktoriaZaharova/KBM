@@ -159,6 +159,9 @@
                         40-ФЗ. Гарантируем сохранность и безопасность ваших данных в соответствии с ФЗ «О персональных
                         данных»
                     </p>
+
+                    <p class="d-flex d-md-none">Для того что бы понять какая скидка будет у вас в следующем году, заполните поля ниже:
+                    </p>
                 </div>
             </div>
 
@@ -335,29 +338,29 @@
                     </table>
 
                     <div class="line-wrapper">
-                        <p>Для того что бы понять какая скидка будет у вас в следующем году, заполните поля ниже:
+                        <p class="d-none d-md-flex">Для того что бы понять какая скидка будет у вас в следующем году, заполните поля ниже:
                         </p>
 
                         <a href="#" class="btn btn-accent">Скачать таблицу</a>
                     </div>
 
-                    <div class="line-wrapper">
+                    <div class="line-wrapper line-wrapper-bottom">
                         <form method="post" class="form form-verify">
                             <label>
                                 <span class="form-title">Выберите ваш КБМ: *</span>
-                                <select name="number" class="select" required>
-                                    <option>0,95</option>
-                                    <option selected="selected">0,95</option>
-                                    <option>0,95</option>
+                                <select name="number" class="select" required multiple>
+                                    <option value="0,95">0,95</option>
+                                    <option selected="selected" value="0,95">0,95</option>
+                                    <option value="0,95">0,95</option>
                                 </select>
                             </label>
 
                             <label>
                                 <span class="form-title">Количество выплат по вашей вине: *</span>
-                                <select name="number" class="select" required>
-                                    <option>Выплат небыло</option>
-                                    <option selected="selected">Выплат небыло</option>
-                                    <option>Выплат небыло</option>
+                                <select name="number" class="select" required multiple>
+                                    <option value="Выплат небыло">Выплат небыло</option>
+                                    <option value="Выплат небыло" selected="selected">Выплат небыло</option>
+                                    <option value="Выплат небыло">Выплат небыло</option>
                                 </select>
                             </label>
                         </form>
@@ -509,8 +512,8 @@
                 <a href="#" class="btn btn-accent">Вернуть скидку</a>
             </div>
 
-            <div class="col-12 col-lg-6">
-                <div class="section-sale__img"><img class="lozad" data-src="img/polis.jpg" alt=""></div>
+            <div class="col-12 col-lg-6 d-none d-lg-flex">
+                <div class="section-sale__img"><img class="lozad" data-src="img/polis.jpg" src="/" alt=""></div>
             </div>
         </div>
     </div>
@@ -526,7 +529,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 warranty-box-wrap">
                 <div class="causes-box warranty-box">
                     <div class="warranty-box__icon"><img src="img/driver-license1.png" alt=""></div>
                     <h3>Замена ВУ</h3>
@@ -540,7 +543,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 warranty-box-wrap">
                 <div class="causes-box warranty-box">
                     <div class="warranty-box__icon"><img src="img/error.png" alt=""></div>
                     <h3>Ошибка страховой
@@ -554,7 +557,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 warranty-box-wrap">
                 <div class="causes-box warranty-box">
                     <div class="warranty-box__icon"><img src="img/seller.png" alt=""></div>
                     <h3>Ошибка агента</h3>
@@ -567,7 +570,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 warranty-box-wrap">
                 <div class="causes-box warranty-box">
                     <div class="warranty-box__icon"><img src="img/customer-support.png" alt=""></div>
                     <h3>Техническая ошибка
