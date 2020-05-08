@@ -2437,6 +2437,9 @@ table {
     .btn-burger span:last-child {
       margin: 0; }
 
+.btn-change .icon {
+  margin: 0 5px 0 0; }
+
 .btn-close {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2808,7 +2811,7 @@ table {
       border-bottom: 1px solid #092153;
       border-radius: 0;
     font-size: 14px;
-    margin: 0 auto; }
+    margin: 0; }
   .ui-selectmenu-text {
     font-size: 12px; }
   .total-line {
