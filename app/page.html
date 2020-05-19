@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Autoins.org - проверка и восстановление КБМ</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <!--    <link rel="stylesheet" href="css/libs.min.css">-->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+
+<div class="content-section content-reestablish content-verify content-page">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-2 d-none d-md-flex">
+                <div class="image-logo"><img src="img/logo2.svg" alt=""></div>
+            </div>
+
+            <div class="col-12 col-md-10">
+                <h1>Проверить КБМ по базе РСА</h1>
+
+                <div class="status-info">
+                    <p>Официальная проверка по базе РСА в режиме онлайн информация содержится в АИС ОСАГО в соответствии
+                        с п.4 Приложения 4 к Указанию Банка России от 4 декабря 2018 года №5000-У "О предельных размерах
+                        базовых ставок страховых тарифов (их минимальных и максимальных значениий, выраженных в
+                        рублях)".</p>
+
+                </div>
+            </div>
+
+
+            <div class="col-12">
+                <div class="box-check">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="content-page__attention">Внимание! Определить КБМ возможно только для водителей
+                                - граждан
+                                РФ
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-5">
+
+                            <div class="row">
+                                <form class="form form-verify">
+                                    <div class="col-12">
+                                        <div class="form__title">ВОДИТЕЛЬ</div>
+                                    </div>
+
+                                    <div class="col-12 col-box">
+                                        <label>
+                                            <span class="form-title">Фамилия: *</span>
+                                            <input type="text" placeholder="Иванов" name="surname" data-name="surname"
+                                                   required>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-12 col-box">
+                                        <label>
+                                            <span class="form-title">Имя: *</span>
+                                            <input type="text" placeholder="Иван" name="name" data-name="name" required>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-12 col-box">
+                                        <label>
+                                            <span class="form-title">Отчество: *</span>
+                                            <input type="text" placeholder="Иванович" name="name">
+                                        </label>
+                                    </div>
+
+                                    <div class="col-12 col-box">
+                                        <label class="label-date">
+                                            <span class="form-title">Дата рождения: *</span>
+                                            <span class="input-group">
+                            <input type="text" placeholder="12.03.1985" name="date" data-name="date" class="datepicker"
+                                   required>
+                        </span>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-subtitle">Серия и номер водительского удостоверения</div>
+                                    </div>
+
+                                    <div class="col-12 col-box">
+                                        <label>
+                                            <span class="form-title">Серия документа: *</span>
+                                            <input type="text" placeholder="9912" name="seriesNum"
+                                                   data-name="seriesNum"
+                                                   required>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-12 col-box">
+                                        <label>
+                                            <span class="form-title">Номер документа: *</span>
+                                            <input type="text" placeholder="199394" name="seriesNum"
+                                                   data-name="seriesNum"
+                                                   required>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form__title">дополнительные сведения</div>
+                                    </div>
+
+                                    <div class="col-12 col-box">
+                                        <label class="checkbox checkbox-changes">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Изменялись фамилия, имя, отчество и/или серия и номер водительского удостоверения, либо рассматриваемый водитель являлся собственником транспортного средства в договоре ОСАГО без ограничения количетсва водиелей, допущенных к управлению транспортным средством</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-block__hidden">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form__title">предыдущие данные водителя</div>
+                                                </div>
+
+                                                <div class="col-12 col-box">
+                                                    <label>
+                                                        <span class="form-title">Фамилия: *</span>
+                                                        <input type="text" placeholder="Иванов" name="surname"
+                                                               data-name="surname"
+                                                               required>
+                                                    </label>
+                                                </div>
+                                                <div class="col-12 col-box">
+                                                    <label>
+                                                        <span class="form-title">Серия предыдущих прав: *</span>
+                                                        <input type="text" placeholder="9912" name="seriesNum"
+                                                               data-name="seriesNum"
+                                                               required>
+                                                    </label>
+                                                </div>
+
+                                                <div class="col-12 col-box">
+                                                    <label>
+                                                        <span class="form-title">Номер предыдущих прав: *</span>
+                                                        <input type="text" placeholder="199394" name="seriesNum"
+                                                               data-name="seriesNum"
+                                                               required>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-lg-5 col-md-7 offset-lg-2">
+
+                            <div class="result-verify">
+                                <div class="col-12">
+                                    <div class="form__title">Результат проверки</div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="result-information">
+                                        <p>Ваш КБМ по текущему ВУ: <strong>1 (Скидка отсутствует)</strong></p>
+                                        <p>КБМ по текущему ВУ: <strong>0.5</strong></p>
+
+                                        <p>У Вас <strong>нет скидки на ОСАГО</strong>, направте заявку на восставноление
+                                            КБМ, если КБМ не будет восстановлен мы вернем денежные средства.</p>
+
+                                        <a href="#" class="btn btn-accent">Восстановить КБМ ></a>
+
+                                        <div class="consent">
+                                            <label class="checkbox checkbox-check">
+                                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                                <span class="checkbox-custom"></span>
+                                                <span class="label">Для восстановления КБМ вы будете перенаправлены на другой адрес.</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="form-bottom-nav">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Подтверждение кода безопасности</p>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="recaptcha"></div>
+                        </div>
+
+                        <div class="col-12 col-lg-5">
+                            <div class="button-group">
+                                <a href="#" class="btn btn-accent">Сбросить</a>
+                                <a href="#" class="btn btn-accent">Поиск</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/jquery.inputmask.js"></script>
+
+<script src="js/common.js"></script>
+</body>
+</html>

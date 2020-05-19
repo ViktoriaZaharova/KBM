@@ -242,3 +242,7 @@ $(function () {
         }
     });
 });
+
+$('.checkbox-changes').click(function () {
+   $('.form-block__hidden').fadeIn();
+});
