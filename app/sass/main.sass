@@ -114,7 +114,6 @@ button
   box-sizing: border-box
   transition: .3s ease
   cursor: pointer
-  box-shadow: none
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -133,6 +132,8 @@ button
 
   .fa-angle-left
     margin: 0 10px 0 0
+  &:focus
+    box-shadow: none
 
 .btn-wrapper
   margin: 20px 0 0 0
@@ -2251,7 +2252,20 @@ table
   text-align: center
   margin: 50px auto 30px
   font-size: 20px
-  max-width: 400px
+  max-width: 440px
+  padding: 0 0 0 30px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translate(0,-50%)
+    width: 10px
+    height: 50px
+    background: url("../img/icon.svg") no-repeat center
+      size: contain
+
 
 .form__title
   margin: 0 0 20px
@@ -2291,6 +2305,20 @@ table
     margin: 10px auto
   .consent
     margin: 0 0 15px
+    font-size: 12px
+    color: #9f9e9e
+
+
+.image-logo
+  width: 100%
+
+.btn-clear
+  border: 1px dashed #103075
+  color: #103075
+  height: 60px
+
+.result-verify
+  display: none
 
 
 @import "media"

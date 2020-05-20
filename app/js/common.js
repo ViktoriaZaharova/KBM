@@ -243,6 +243,27 @@ $(function () {
     });
 });
 
-$('.checkbox-changes').click(function () {
-   $('.form-block__hidden').fadeIn();
+$('.checkbox-changes').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('checkbox-check')
+   $('.form-block__hidden').fadeToggle();
+});
+
+$('.btn-clear').click(function(e){
+    e.preventDefault();
+    $('.form-verify__page input[type=text]').each(function(){
+        $(this).val('');
+    });
+    $('.form-verify__page').trigger('reset');
+});
+
+$('.btn-search__verify').click(function (e) {
+    e.preventDefault();
+   $('.result-verify').fadeIn();
+    var id = $(this).attr('href'),
+
+        top = $(id).offset().top;
+
+    //анимируем переход на расстояние - top за 500 мс
+    $('body,html').animate({scrollTop: top - 240}, 500);
 });

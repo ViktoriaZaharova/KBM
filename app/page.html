@@ -36,11 +36,11 @@
 
         <div class="row">
 
-            <div class="col-2 d-none d-md-flex">
+            <div class="col-3 col-lg-2">
                 <div class="image-logo"><img src="img/logo2.svg" alt=""></div>
             </div>
 
-            <div class="col-12 col-md-10">
+            <div class="col-9 col-lg-10">
                 <h1>Проверить КБМ по базе РСА</h1>
 
                 <div class="status-info">
@@ -66,7 +66,7 @@
                         <div class="col-12 col-md-5">
 
                             <div class="row">
-                                <form class="form form-verify">
+                                <form class="form form-verify form-verify__page">
                                     <div class="col-12">
                                         <div class="form__title">ВОДИТЕЛЬ</div>
                                     </div>
@@ -193,14 +193,10 @@
                                         <p>У Вас <strong>нет скидки на ОСАГО</strong>, направте заявку на восставноление
                                             КБМ, если КБМ не будет восстановлен мы вернем денежные средства.</p>
 
-                                        <a href="#" class="btn btn-accent">Восстановить КБМ ></a>
+                                        <a href="#" class="btn btn-accent" id="btn-reestablish">Восстановить КБМ ></a>
 
                                         <div class="consent">
-                                            <label class="checkbox checkbox-check">
-                                                <input class="checkbox-inp" type="checkbox" name="checkbox">
-                                                <span class="checkbox-custom"></span>
-                                                <span class="label">Для восстановления КБМ вы будете перенаправлены на другой адрес.</span>
-                                            </label>
+                                            Для восстановления КБМ вы будете перенаправлены на другой адрес.
                                         </div>
                                     </div>
                                 </div>
@@ -213,18 +209,12 @@
 
                 <div class="form-bottom-nav">
                     <div class="row">
-                        <div class="col-12">
-                            <p>Подтверждение кода безопасности</p>
-                        </div>
 
-                        <div class="col-12">
-                            <div class="recaptcha"></div>
-                        </div>
 
                         <div class="col-12 col-lg-5">
                             <div class="button-group">
-                                <a href="#" class="btn btn-accent">Сбросить</a>
-                                <a href="#" class="btn btn-accent">Поиск</a>
+                                <a href="#" class="btn btn-clear">Сбросить</a>
+                                <a href="#btn-reestablish" class="btn btn-accent btn-search__verify">Поиск</a>
                             </div>
                         </div>
                     </div>
